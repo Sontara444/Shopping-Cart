@@ -1,5 +1,6 @@
 import React from 'react'
 import { PRODUCTS } from '../../products'
+import { Product } from './product'
 
 export const Shop = () => {
   return (
@@ -7,9 +8,10 @@ export const Shop = () => {
       <div className="shopTitle">
         <h1>My Shop</h1>
       </div>
-      <div className="products" >
+      <div className="products" >{PRODUCTS.map((product) => 
+      <Product />)}</div>
         
-      </div>
+      
     </div>
   )
 }
